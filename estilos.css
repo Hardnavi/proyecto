@@ -1,0 +1,106 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(https://cdn.leonardo.ai/users/771031ed-13e1-4721-9f6f-aadd0d6ed668/generations/7b5dac5d-494e-4875-ace4-7ca9351374ba/Default_Create_a_vibrant_background_image_for_Game_Zone_a_colo_0.jpg);
+    background-repeat: no-repeat;
+            background-size: cover;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+h1, h2 {
+    margin: 0;
+    color: white;
+}
+
+/* Estilos del contenedor de productos */
+#productos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilos individuales para cada producto */
+.producto {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: calc(33% - 40px); /* 3 productos por fila con margen */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Animación al pasar el mouse */
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.ver-producto {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: #35424a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.ver-producto:hover {
+    background: #2c3e50; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos del footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .producto {
+        width: calc(50% - 40px); /* 2 productos por fila en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .producto {
+        width: calc(100% - 40px); /* 1 producto por fila en pantallas pequeñas */
+    }
+
+    nav ul li {
+        display: block; /* Navegación en vertical en pantallas pequeñas */
+        margin: 10px 0;
+    }
+}

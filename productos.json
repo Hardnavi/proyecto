@@ -1,0 +1,47 @@
+[
+    {
+        "nombre": "Street Fighter 6",
+        "imagen": "imagenes/1.jpg",
+        "link": "producto1.html"
+    },
+    {
+        "nombre": "Final Fantasy 16",
+        "imagen": "imagenes/2.jpg",
+        "link": "producto2.html"
+    },
+    {
+        "nombre": "Resident Evil 4",
+        "imagen": "imagenes/3.jpg",
+        "link": "producto3.html"
+    },
+    {
+        "nombre": "Grand Theft Auto VI",
+        "imagen": "imagenes/4.jpg",
+        "link": "producto4.html"
+    },
+    {
+        "nombre": "God of War: Ragnarok",
+        "imagen": "imagenes/5.jpeg",
+        "link": "producto5.html"
+    },
+    {
+        "nombre": "EA SPORTS™ FC 24",
+        "imagen": "imagenes/6.jpg",
+        "link": "producto6.html"
+    },
+    {
+        "nombre": "Valorant",
+        "imagen": "imagenes/7.jpg",
+        "link": "producto7.html"
+    },
+    {
+        "nombre": "Apex Legends",
+        "imagen": "imagenes/8.avif",
+        "link": "producto8.html"
+    },
+    {
+        "nombre": "Dota 2",
+        "imagen": "imagenes/9.jpg",
+        "link": "producto9.html"
+    }
+]

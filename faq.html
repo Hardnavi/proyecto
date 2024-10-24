@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Preguntas Frecuentes</title>
+</head>
+<style>
+    /* Estilos para el formulario de preguntas */
+form {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical; /* Permite redimensionar verticalmente el área de texto */
+}
+
+form input[type="submit"] {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background: #2c3e50; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para la sección de preguntas frecuentes */
+section {
+    margin-bottom: 20px;
+}
+
+h2,ul {
+    color:white; /* Color de los encabezados */
+    
+}
+
+
+strong {
+    color: white ; /* Color para las preguntas */
+}
+</style>
+<body>
+    <header>
+        <h1>Preguntas Frecuentes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="productos.html">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de Preguntas</h2>
+            <form action="#" method="post">
+                <label for="pregunta">Ingresa tu pregunta:</label>
+                <textarea id="pregunta" name="pregunta" required></textarea>
+                <br>
+                <input type="submit" value="Enviar Pregunta">
+            </form>
+        </section>
+        <section>
+            <h2>Preguntas Frecuentes</h2>
+            <ul>
+                <li>
+                    <strong>Pregunta 1:</strong> ¿Cuál es el horario de atención?
+                    <p>Respuesta: Nuestro horario de atención es de lunes a viernes de 9:00 a 18:00.</p>
+                </li>
+                <li>
+                    <strong>Pregunta 2:</strong> ¿Hacen envíos internacionales?
+                    <p>Respuesta: Sí, realizamos envíos a varios países. Consulta nuestra sección de envíos para más detalles.</p>
+                </li>
+                <li>
+                    <strong>Pregunta 3:</strong> ¿Puedo devolver un producto?
+                    <p>Respuesta: Sí, aceptamos devoluciones dentro de los 30 días posteriores a la compra. Consulta nuestra política de devoluciones para más información.</p>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Game Zone</p>
+    </footer>
+</body>
+</html>

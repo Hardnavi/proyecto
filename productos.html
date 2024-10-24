@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Productos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="productos.html">Productos</a></li>
+            </ul>
+        </nav>
+        <div class="carrito" id="carrito-icono" title="Ver carrito">
+            <img src="imagenes/carrito.png" alt="Carrito" id="icono-carrito">
+            <span id="cantidad-carrito">0</span>
+            <div id="lista-carrito" class="lista-carrito oculto"></div> <!-- Lista dentro del icono -->
+            <button id="vaciar-carrito">Vaciar carrito</button>
+        </div>
+    </header>
+    <main>
+<style>
+    /* Estilos generales para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo suave */
+}
+
+/* Estilos para el encabezado */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Estilos para la navegación */
+
+
+/* Estilos para la sección de productos */
+/* Estilos para la sección de productos */
+.productos {
+    padding: 20px;
+}
+
+.productos h2 {
+    text-align: center;
+    color: #35424a;
+}
+
+/* Estilos para la cuadrícula de productos */
+.grid-productos {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Estilos para cada producto */
+.producto {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%; /* Asegura que las imágenes no excedan el contenedor */
+    height: auto;
+}
+
+.producto h3 {
+    margin: 10px 0;
+}
+
+.producto p {
+    color: #333;
+}
+
+/* Botón para añadir al carrito */
+.añadir-carrito {
+    background: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.añadir-carrito:hover {
+    background: #4cae4c; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilos para la sección del carrito */
+.carrito {
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.carrito h2 {
+    color: #35424a;
+}
+
+/* Estilos para el icono del carrito */
+#carrito-icono {
+    position: relative;
+    cursor: pointer;
+}
+
+#icono-carrito {
+    width: 50px; /* Ajusta el tamaño de la imagen del carrito */
+}
+
+#cantidad-carrito {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+/* Estilos para la lista del carrito */
+.lista-carrito {
+    display: none; /* Ocultar por defecto */
+    position: absolute;
+    background: slategrey;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    width: 200px; /* Ancho fijo para la lista */
+    max-height: 200px; /* Altura máxima */
+    overflow-y: auto; /* Scroll si hay demasiados productos */
+}
+
+#carrito-icono:hover .lista-carrito {
+    display: block; /* Mostrar la lista al pasar el mouse */
+}
+
+.lista-carrito li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-carrito li:last-child {
+    border-bottom: none; /* Sin borde en el último elemento */
+}
+
+.borrar-producto {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+}
+</style>
+<center>
+    <section class="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="grid-productos">
+            <div class="producto">
+                <img src="imagenes/1.jpg" alt="Producto 1">
+                <h3>Street Fighter 6</h3>
+                <p>Precio: $10.99</p>
+                <button class="añadir-carrito">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/2.jpg" alt="Producto 2">
+                <h3>Final Fantasy 16</h3>
+                <p>Precio: $5.99</p>
+                <button class="añadir-carrito">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/3.jpg" alt="Producto 3">
+                <h3>Resident Evil 4</h3>
+                <p>Precio: $7.99</p>
+                <button class="añadir-carrito">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/4.jpg" alt="Producto 4">
+                <h3>Grand Theft Auto VI</h3>
+                <p>Precio: $12.99</p>
+                <button class="añadir-carrito">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/5.jpeg" alt="Producto 4">
+                <h3>God of War: Ragnarok</h3>
+                <p>Precio: $12.99</p>
+                <button class="añadir-carrito">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/6.jpg" alt="Producto 4">
+                <h3>EA SPORTS™ FC 24</h3>
+                <p>Precio: $12.99</p>
+                <button class="añadir-carrito">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/7.jpg" alt="Producto 4">
+                <h3>Valorant</h3>
+                <p>Precio: $12.99</p>
+                <button class="añadir-carrito">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/8.avif" alt="Producto 4">
+                <h3>Apex Legends</h3>
+                <p>Precio: $12.99</p>
+                <button class="añadir-carrito">Añadir al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="imagenes/9.jpg" alt="Producto 4">
+                <h3>Dota 2</h3>
+                <p>Precio: $12.99</p>
+                <button class="añadir-carrito">Añadir al carrito</button>
+            </div>
+        </div>
+    </section>
+</center>
+    </main>
+    <footer>
+        <p>&copy; 2024 Game Zone</p>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>

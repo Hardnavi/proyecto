@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Contacto</title>
+</head>
+<style>
+    /* Estilos para el formulario de contacto */
+form {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background: #35424a;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background: #2c3e50; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilos para secciones de contacto */
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color:white; /* Color de los encabezados */
+}
+p{
+        color: white;
+    }
+</style>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="productos.html">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <section>
+            <h2>Información de Contacto</h2>
+            <p>
+                Dirección: [Dirección de la empresa]
+                <br>
+                Teléfono: [Teléfono de la empresa]
+                <br>
+                Correo Electrónico: [Correo electrónico de la empresa]
+            </p>
+        </section>
+        <section>
+            <h2>Redes Sociales</h2>
+            <p>
+                Síguenos en nuestras redes sociales para estar al día de nuestras últimas noticias y promociones.
+                <br>
+                <a href="[Enlace a Facebook]">Facebook</a>
+                <br>
+                <a href="[Enlace a Twitter]">Twitter</a>
+                <br>
+                <a href="[Enlace a Instagram]">Instagram</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Game Zone</p>
+    </footer>
+</body>
+</html>

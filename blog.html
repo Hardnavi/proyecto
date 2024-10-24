@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Blog</title>
+</head>
+<style>
+    /* Estilos generales para el blog */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la sección de artículos */
+.articulos {
+    width: 100%; /* Ahora ocupa todo el ancho */
+    padding: 20px;
+}
+
+.articulos article {
+    background: #f9f9f9;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.articulos h3 {
+    color: #35424a; /* Color para los títulos de los artículos */
+}
+
+.articulos p {
+    margin: 10px 0;
+}
+
+/* Estilos para imágenes en los artículos */
+.articulos img {
+    width: 100%; /* Las imágenes ocuparán todo el ancho del artículo */
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
+
+/* Estilos para enlaces de "Leer más" */
+.articulos a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #35424a;
+    text-decoration: none;
+    border: 1px solid #35424a;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.articulos a:hover {
+    background: #35424a;
+    color: #ffffff; /* Color de texto al pasar el mouse */
+}
+
+/* Estilos para el footer */
+footer {
+    clear: both;
+    background: #35424a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+</style>
+<body>
+    <header>
+        <h1>Blog</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="faq.html">Preguntas Frecuentes</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="productos.html">Productos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="articulos">
+            <h2>Últimas noticias y artículos de nuestra empresa.</h2>
+            <article>
+                <h3>Nuevo producto: Lanzamiento de nuestra nueva línea de productos</h3>
+                <p>Estamos emocionados de anunciar el lanzamiento de nuestra nueva
+                    línea de productos, diseñados para mejorar tu experiencia.</p>
+                <a href="#">Leer más</a>
+            </article>
+            <article>
+                <h3>Cómo elegir el producto adecuado para tus necesidades</h3>
+                <p>En este artículo, te explicamos cómo elegir el producto adecuado para tus necesidades y objetivos</p>
+                <a href="#">Leer más</a>
+            </article>
+            <article>
+                <h3>La importancia de la calidad en nuestros productos</h3>
+                <p>En Empresa La Empresa GameZone, nos enfocamos en ofrecer productos de alta calidad que satisfagan las necesidades de nuestros clientes.</p>
+                <a href="#">Leer más</a>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Game Zone</p>
+    </footer>
+</body>
+</html>
